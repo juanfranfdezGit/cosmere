@@ -1,0 +1,41 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: linear-gradient(
+    to bottom,
+    rgba(34, 34, 34, 1) 85%,
+    rgba(34, 34, 34, 0) 100%
+  );
+  justify-content: space-between;
+  padding: 1rem 4rem 3rem;
+
+  &__title {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    gap: 2rem;
+
+    &__item {
+      font-size: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        color: #e2a45c;
+      }
+    }
+  }
+
+  &__logo {
+    width: 60px;
+    filter: invert(1);
+  }
+}
