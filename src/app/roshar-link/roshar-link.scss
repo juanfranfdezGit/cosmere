@@ -3,16 +3,27 @@
     top: 79dvh;
     left: 58dvw;
     cursor: pointer;
-
+    transition: all .4s ease-in-out;
+    
     &__image {
         width: 80px;
         height: auto;
         filter: invert(1) drop-shadow(0 0 8px #c5ba799d);
     }
-
+    
     &__title {
         font-size: 1.5rem;
         color: #e6e6e6;
         text-shadow: 0 0 10px #c5ba799d;
+    }
+    
+    &:hover {
+        &__image {
+            filter: invert(1) drop-shadow(0 0 12px #c5ba79);
+        }
+
+        &__title {
+            text-shadow: 0 0 15px #c5ba79;
+        }
     }
 }

@@ -1,0 +1,18 @@
+.scadrialLink {
+    position: absolute;
+    top: 28dvh;
+    left: 4dvw;
+    cursor: pointer;
+
+    &__image {
+        width: 80px;
+        height: auto;
+        filter: invert(1) drop-shadow(0 0 12px #d30202);
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-shadow: 0 0 5px #d30202;
+    }
+}
