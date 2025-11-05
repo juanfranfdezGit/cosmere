@@ -24,6 +24,45 @@
     }
   }
 
+  .breakSection__image {
+    position: absolute;
+    width: 120px;
+    object-fit: contain;
+
+    &.breakSection__image1 {
+      top: 25%;
+      left: 10%;
+      filter: drop-shadow(0 0 12px #ffcc80);
+    }
+
+    &.breakSection__image2 {
+      top: 45%;
+      right: 10%;
+      transform: rotate(15deg);
+      filter: drop-shadow(0 0 12px #80d8ff);
+    }
+
+    &.breakSection__image3 {
+      bottom: 40%;
+      left: 20%;
+      filter: drop-shadow(0 0 32px #defffc);
+    }
+
+    &.breakSection__image4 {
+      width: 80px;
+      top: 24%;
+      right: 20%;
+      filter: drop-shadow(0 0 32px #defffc);
+    }
+
+    &.breakSection__image5 {
+      width: 80px;
+      bottom: 28%;
+      right: 20%;
+      filter: drop-shadow(0 0 32px #defffc);
+    }
+  }
+  
   .color-bg {
     position: absolute;
     inset: 0;

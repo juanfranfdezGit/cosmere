@@ -1,0 +1,93 @@
+.mapTitle {
+  text-align: center;
+}
+
+.mapSection {
+  position: relative;
+  margin: 3rem auto 8rem;
+  width: 70vw;
+  height: 82vh;
+  background: url(/assets/images/maps/cosmere.webp);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(97, 196, 235, 0.589);
+  box-shadow: inset 0 0 40px 2px rgba(0, 225, 255, 0.4),
+    0 0 60px 35px rgba(0, 225, 255, 0.2), inset 0 0 10px rgba(0, 225, 255, 0.3);
+
+  &__link {
+    position: absolute;
+    cursor: pointer;
+
+    img {
+      width: 60px;
+      object-fit: contain;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: white;
+      text-shadow: 0 0 6px #ccb13a;
+    }
+
+    &.roshar {
+      bottom: 4%;
+      left: 15%;
+
+      img {
+        filter: invert(1) drop-shadow(0 0 8px #ccb13a);
+      }
+    }
+
+    &.nalthis {
+      bottom: 57%;
+      left: 1%;
+      text-shadow: 0 0 4px #ff0040, 0 0 6px #ff7a00, 0 0 8px #ffee00,
+        0 0 10px #4dff00, 0 0 12px #00ffd5, 0 0 14px #0077ff, 0 0 16px #8f00ff;
+
+      img {
+        width: 50px;
+        filter: invert(1) drop-shadow(0 0 2px rgba(255, 0, 64, 0.45))
+          drop-shadow(0 0 3px rgba(255, 122, 0, 0.45))
+          drop-shadow(0 0 4px rgba(255, 238, 0, 0.45))
+          drop-shadow(0 0 5px rgba(77, 255, 0, 0.45))
+          drop-shadow(0 0 6px rgba(0, 255, 213, 0.45))
+          drop-shadow(0 0 10px rgba(0, 119, 255, 0.45))
+          drop-shadow(0 0 12px rgba(143, 0, 255, 0.45));
+      }
+
+      h2 {
+        z-index: 5;
+      }
+    }
+
+    &.scadrial {
+      top: 7%;
+      left: 5%;
+
+      img {
+        width: 50px;
+        filter: invert(1) drop-shadow(0 0 8px #4d0202);
+      }
+
+      h2 {
+        text-shadow: 0 0 6px #ff7a00;
+      }
+    }
+
+    &.sel {
+      bottom: 11%;
+      left: 59.5%;
+
+      img {
+        width: 50px;
+        filter: invert(1) drop-shadow(0 0 8px #37d3e7);
+      }
+
+      h2 {
+        text-shadow: 0 0 6px #37d3e7;
+      }
+    }
+  }
+}
