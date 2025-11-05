@@ -1,22 +1,27 @@
 .origin {
-    width: 100vw;
-    height: auto;
-    background: #22222283;
-    padding: 12rem 10rem 5rem;
+  width: 100vw;
+  height: auto;
+  background: linear-gradient(
+    to bottom,
+    #222222a1 0%,
+    #222222a1 60%,
+    transparent 100%
+  );
+  padding: 12rem 10rem 5rem;
 
-    .adonalsiumImage {
-        position: relative;
-        margin-top: 3rem;
+  .adonalsiumImage {
+    position: relative;
+    margin-top: 3rem;
 
-        &__principal {
-            width: 45vw;
-            z-index: 2;
-        }
-
-        &__effects {
-            width: 60vw;
-            position: absolute;
-            z-index: 1;
-        }
+    &__principal {
+      width: 45vw;
+      z-index: 2;
     }
+
+    &__effects {
+      width: 60vw;
+      position: absolute;
+      z-index: 1;
+    }
+  }
 }

@@ -1,0 +1,103 @@
+.breakSection {
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  padding: 30rem 25rem;
+  z-index: 1;
+  margin-top: -35vh;
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .content {
+    gap: 1rem;
+    text-align: center;
+
+    .shard-image {
+      margin-top: 3rem;
+      width: 300px;
+      border-radius: 1rem;
+      object-fit: contain;
+      filter: drop-shadow(0 0 8px purple);
+    }
+  }
+
+  .color-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.8;
+    filter: blur(var(--blur));
+
+    background-image: linear-gradient(
+        135deg,
+        #0b0b0f 0%,
+        #1a1d2e 20%,
+        #34224a 45%,
+        #523261 65%,
+        #8b4f6c 80%,
+        #d18a5f 100%
+      ),
+      radial-gradient(
+        1200px 700px at 10% 20%,
+        rgba(226, 164, 92, 0.95),
+        transparent 30%
+      ),
+      radial-gradient(
+        900px 600px at 80% 30%,
+        rgba(109, 131, 151, 0.95),
+        transparent 25%
+      ),
+      radial-gradient(
+        700px 500px at 60% 80%,
+        rgba(182, 102, 255, 0.9),
+        transparent 20%
+      ),
+      radial-gradient(
+        1000px 600px at 30% 80%,
+        rgba(255, 120, 150, 0.9),
+        transparent 22%
+      );
+
+    background-blend-mode: screen, screen, screen, screen, overlay;
+    transition: opacity 300ms ease;
+    will-change: background-position, opacity;
+    animation: floatColors 120s linear infinite;
+
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 25%,
+      black 75%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 25%,
+      black 75%,
+      transparent 100%
+    );
+  }
+
+  @keyframes floatColors {
+    0% {
+      background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      transform: translateZ(0) scale(1);
+      filter: blur(var(--blur));
+    }
+    50% {
+      background-position: 25% 75%, 80% 20%, 60% 40%, 10% 90%, 50% 50%;
+      transform: translateZ(0) scale(1.02);
+      filter: blur(calc(var(--blur) + 2px));
+    }
+    100% {
+      background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      transform: translateZ(0) scale(1);
+      filter: blur(var(--blur));
+    }
+  }
+}
