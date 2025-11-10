@@ -1,0 +1,41 @@
+footer {
+  z-index: 10;
+  background: #1d1d1da4;
+  padding: 60px 5vw;
+  text-align: center;
+  justify-content: space-between;
+
+  .website {
+    gap: 20px;
+
+    h4 {
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: -10px;
+      width: 80%;
+    }
+
+    img {
+      width: 60px;
+      filter: invert(1);
+    }
+  }
+
+  .footer__links {
+    text-transform: capitalize;
+
+    .footer__links__list {
+      align-items: flex-start;
+    }
+  }
+
+  .footer__image {
+    width: 120px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
