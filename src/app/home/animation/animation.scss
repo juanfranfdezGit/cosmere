@@ -1,0 +1,94 @@
+.animationContainer {
+  height: 90vh;
+  overflow: hidden;
+  margin-top: 10vh;
+
+  &__luthadel {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+
+    &__mistborn {
+      z-index: 2;
+      position: absolute;
+      bottom: 5%;
+      left: 50vw;
+      width: 30%;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 8px #2f2f30c4) blur(0.2);
+      transform: translateY(-20px) translateX(12px);
+
+      &.active {
+        animation: mistbornFloat 5s forwards;
+      }
+    }
+
+    &__smoke {
+      z-index: 3;
+      position: absolute;
+      bottom: -20vh;
+      left: -20vw;
+      width: 150%;
+      animation: smokeMovement 10s infinite;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__kholinar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__hallandren {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes mistbornFloat {
+  0% {
+    transform: translateY(0) translateX(0vw);
+  }
+
+  100% {
+    transform: translateY(-20px) translateX(12px);
+  }
+}
+
+@keyframes smokeMovement {
+  0% {
+    left: -35vw;
+  }
+
+  100% {
+    left: -20vw;
+  }
+}
