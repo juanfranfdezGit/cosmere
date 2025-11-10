@@ -37,6 +37,33 @@
       animation: smokeMovement 10s infinite;
     }
 
+    &__title {
+      position: absolute;
+      bottom: 8vh;
+      left: -20vw;
+      z-index: 4;
+      color: #ffffffcc;
+      text-shadow: 0 0 8px #000000cc;
+      align-items: flex-start;
+      gap: 8px;
+      text-transform: uppercase;
+      text-shadow: 0 0 8px #111;
+      transition: all 1s;
+
+      &.active {
+        left: 5vw;
+      }
+
+      &__capital {
+        img {
+          width: 32px;
+          height: 32px;
+          margin-right: 0.5rem;
+          filter: invert(1) drop-shadow(0 0 4px red);
+        }
+      }
+    }
+
     &.active {
       opacity: 1;
     }
@@ -52,6 +79,53 @@
     opacity: 0;
     transition: opacity 1.3s ease-in-out;
 
+    &__title {
+      position: absolute;
+      bottom: 8vh;
+      right: -28vw;
+      z-index: 2;
+      color: #ffffffcc;
+      text-shadow: 0 0 8px #000000cc;
+      align-items: flex-start;
+      gap: 8px;
+      text-transform: uppercase;
+      text-shadow: 0 0 8px #111;
+      transition: all 1s;
+
+      &.active {
+        right: 8vw;
+      }
+
+      &__capital {
+        img {
+          width: 42px;
+          height: 42px;
+          margin-right: 0.5rem;
+          filter: invert(1) drop-shadow(0 0 4px #ffef94);
+        }
+      }
+    }
+
+    &__kaladin {
+      position: absolute;
+      bottom: 15vh;
+      left: 15vw;
+      width: 340px;
+      z-index: 2;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 8px #19e0e0cb);
+    }
+
+    &__rain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      opacity: 0.2;
+    }
+
     &.active {
       opacity: 1;
     }
@@ -66,6 +140,80 @@
     height: 100%;
     opacity: 0;
     transition: opacity 1.3s ease-in-out;
+
+    &__city {
+      position: absolute;
+      bottom: -25vh;
+      right: 0;
+      width: 100%;
+      z-index: 2;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 8px #e019e0cb);
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 8vh;
+      left: 8vw;
+      z-index: 2;
+      color: #ffffffcc;
+      text-shadow: 0 0 8px #000000cc;
+      align-items: flex-start;
+      gap: 8px;
+      text-transform: uppercase;
+      text-shadow: 0 0 8px #111;
+      transition: all 1s;
+
+      &.active {
+        right: 8vw;
+      }
+
+      &__capital {
+        img {
+          width: 42px;
+          height: 42px;
+          margin-right: 0.5rem;
+          filter: invert(1) drop-shadow(0 0 4px #ffef94);
+        }
+      }
+    }
+
+    &__sirivivenna {
+      position: absolute;
+      bottom: 0vh;
+      right: 40vw;
+      width: 340px;
+      z-index: 3;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 8px #19e0e0cb);
+    }
+
+    &__effect {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      opacity: .6;
+    }
+
+    &__effect02 {
+      position: absolute;
+      bottom: 18%;
+      width: 30%;
+      left: 60%;
+      z-index: 2;
+      opacity: .7;
+    }
+
+    &__effect03 {
+      position: absolute;
+      bottom: 18%;
+      width: 20%;
+      right: 60%;
+      z-index: 2;
+      opacity: .7;
+    }
 
     &.active {
       opacity: 1;
