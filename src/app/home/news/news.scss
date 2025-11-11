@@ -17,6 +17,8 @@
       min-height: 42vh;
       cursor: pointer;
       overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #bebebe;
 
       h3 {
         text-align: center;
@@ -52,6 +54,18 @@
 
       &.news02 {
         background: url(/assets/images/news/news02.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      &.news03 {
+        background: url(/assets/images/news/news03.jfif);
+        background-size: cover;
+        background-position: center;
+      }
+
+      &.news04 {
+        background: url(/assets/images/news/news04.jpg);
         background-size: cover;
         background-position: center;
       }
