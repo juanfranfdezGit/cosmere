@@ -17,7 +17,7 @@ export class Animation implements OnInit {
     setInterval(() => {
       this.activeDiv = this.activeDiv === 3 ? 1 : this.activeDiv + 1;
       this.cd.detectChanges();
-    }, 4000);
+    }, 6000);
   }
   
 }

@@ -1,6 +1,6 @@
 <section class="animationContainer flex">
-  <div class="animationContainer__luthadel">
-    <div class="animationContainer__luthadel__title flex column">
+  <div class="animationContainer__luthadel" [class.active]="activeDiv === 1">
+    <div class="animationContainer__luthadel__title flex column" [class.active]="activeDiv === 1">
       <h2><span>Nacidos de la bruma</span></h2>
       <div class="animationContainer__luthadel__title__capital flex">
         <img src="/assets/images/glyphs/scadrial.svg" alt="scadrial glyph" />
@@ -9,7 +9,7 @@
     </div>
     <img src="/assets/images/cities/luthadel.png" alt="luthadel city" />
     <img
-      class="animationContainer__luthadel__mistborn"
+      class="animationContainer__luthadel__mistborn" [class.active]="activeDiv === 1"
       src="/assets/images/characters/mistborn.png"
       alt="mitsborn"
     />
@@ -20,7 +20,7 @@
     />
   </div>
 
-  <div class="animationContainer__kholinar">
+  <div class="animationContainer__kholinar" [class.active]="activeDiv === 2">
     <img src="/assets/images/cities/kholinar.png" alt="luthadel city" />
     <img
       class="animationContainer__kholinar__rain"
@@ -28,11 +28,16 @@
       alt="rain"
     />
     <img
-      class="animationContainer__kholinar__kaladin"
-      src="/assets/images/characters/kaladin.webp"
+      class="animationContainer__kholinar__kaladin" [class.active]="activeDiv === 2"
+      src="/assets/images/characters/kaladin.png"
       alt="kaladin sotormblessed"
     />
-    <div class="animationContainer__kholinar__title flex column">
+    <img
+      class="animationContainer__kholinar__syl" [class.active]="activeDiv === 2"
+      src="/assets/images/characters/syl02.png"
+      alt="sylphrena"
+    />
+    <div class="animationContainer__kholinar__title flex column" [class.active]="activeDiv === 2">
       <h2><span>El archivo de las tormentas</span></h2>
       <div class="animationContainer__kholinar__title__capital flex">
         <img src="/assets/images/glyphs/roshar.svg" alt="roshar glyph" />
@@ -41,33 +46,33 @@
     </div>
   </div>
 
-  <div class="animationContainer__hallandren active">
+  <div class="animationContainer__hallandren" [class.active]="activeDiv === 3">
     <img
       class="animationContainer__hallandren__city"
       src="/assets/images/cities/hallandren.png"
       alt="luthadel city"
     />
     <img
-      class="animationContainer__hallandren__sirivivenna"
-      src="/assets/images/characters/ilustrar_siri_y_vivenna.jpg"
+      class="animationContainer__hallandren__sirivivenna" [class.active]="activeDiv === 3"
+      src="/assets/images/characters/siriyvivenna.png"
       alt="Siri and Vivenna"
     />
     <img
-      class="animationContainer__hallandren__effect"
+      class="animationContainer__hallandren__effect" [class.active]="activeDiv === 3"
       src="/assets/images/effects/rainbow.png"
       alt="rainbow effects"
     />
     <img
-      class="animationContainer__hallandren__effect02"
+      class="animationContainer__hallandren__effect02" [class.active]="activeDiv === 3"
       src="/assets/images/effects/rainbow02.png"
       alt="rainbow effects"
     />
     <img
-      class="animationContainer__hallandren__effect03"
+      class="animationContainer__hallandren__effect03" [class.active]="activeDiv === 3"
       src="/assets/images/effects/rainbow02.png"
       alt="rainbow effects"
     />
-    <div class="animationContainer__hallandren__title flex column">
+    <div class="animationContainer__hallandren__title flex column" [class.active]="activeDiv === 3">
       <h2><span>El aliento de los dioses</span></h2>
       <div class="animationContainer__hallandren__title__capital flex">
         <img src="/assets/images/glyphs/nalthis.png" alt="nalthis glyph" />
@@ -76,7 +81,3 @@
     </div>
   </div>
 </section>
-
-<!-- [class.active]="activeDiv === 1"
-[class.active]="activeDiv === 2"
-[class.active]="activeDiv === 3" -->

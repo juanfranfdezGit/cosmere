@@ -108,12 +108,32 @@
 
     &__kaladin {
       position: absolute;
-      bottom: 15vh;
-      left: 15vw;
-      width: 340px;
+      bottom: 12vh;
+      left: 12vw;
+      width: 300px;
       z-index: 2;
       opacity: 0.9;
-      filter: drop-shadow(0 0 8px #19e0e0cb);
+      filter: drop-shadow(0 0 2px #19e0e0cb);
+      transform: translateY(-20px);
+
+      &.active {
+        animation: kaladinFloat 3s forwards;
+      }
+    }
+
+    &__syl {
+      position: absolute;
+      bottom: 20vh;
+      left: 6vw;
+      width: 240px;
+      z-index: 1;
+      opacity: 0.8;
+      filter: drop-shadow(0 0 32px #0dfafacb);
+      transform: translateY(-20px);
+
+      &.active {
+        animation: kaladinFloat 3s forwards;
+      }
     }
 
     &__rain {
@@ -154,7 +174,7 @@
     &__title {
       position: absolute;
       bottom: 8vh;
-      left: 8vw;
+      left: -22vw;
       z-index: 2;
       color: #ffffffcc;
       text-shadow: 0 0 8px #000000cc;
@@ -165,7 +185,7 @@
       transition: all 1s;
 
       &.active {
-        right: 8vw;
+        left: 8vw;
       }
 
       &__capital {
@@ -181,29 +201,41 @@
     &__sirivivenna {
       position: absolute;
       bottom: 0vh;
-      right: 40vw;
-      width: 340px;
+      right: 38vw;
+      width: 420px;
       z-index: 3;
-      opacity: 0.9;
-      filter: drop-shadow(0 0 8px #19e0e0cb);
+      filter: drop-shadow(0 0 2px #111);
+      transform: scale(1.05);
+
+      &.active {
+        animation: siriviv 3s forwards;
+      }
     }
 
     &__effect {
       position: absolute;
       top: 70%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-40%, -60%) rotate(10deg);
       z-index: 2;
-      opacity: .6;
+      opacity: 0.6;
+
+      &.active {
+        animation: colorsRotate 6s forwards;
+      }
     }
 
     &__effect02 {
       position: absolute;
       bottom: 18%;
       width: 30%;
-      left: 60%;
+      left: 65%;
       z-index: 2;
-      opacity: .7;
+      opacity: 0.7;
+      transform: rotate(40deg);
+      &.active {
+        animation: colorsRotate02 8s forwards;
+      }
     }
 
     &__effect03 {
@@ -212,7 +244,12 @@
       width: 20%;
       right: 60%;
       z-index: 2;
-      opacity: .7;
+      opacity: 0.7;
+      transform: rotate(40deg);
+
+      &.active {
+        animation: colorsRotate02 12s forwards;
+      }
     }
 
     &.active {
@@ -238,5 +275,45 @@
 
   100% {
     left: -20vw;
+  }
+}
+
+@keyframes kaladinFloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes siriviv {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes colorsRotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(15deg);
+  }
+
+  100% {
+    transform: translate(-40%, -60%) rotate(10deg);
+  }
+}
+
+@keyframes colorsRotate02 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(40deg);
   }
 }
