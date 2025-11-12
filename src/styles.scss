@@ -2,6 +2,10 @@
   font-family: satoshi;
   src: url(/assets/fonts/Satoshi-Variable.woff2) format("woff2-variations");
 }
+@font-face {
+  font-family: old;
+  src: url(/assets/fonts/Candlescript.otf);
+}
 
 * {
   margin: 0;

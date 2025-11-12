@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Heroes } from './heroes/heroes';
+import { Era1 } from './era1/era1';
 
 @Component({
   selector: 'app-scadrial',
-  imports: [Heroes],
+  imports: [Era1],
   templateUrl: './scadrial.html',
   styleUrl: './scadrial.scss',
 })

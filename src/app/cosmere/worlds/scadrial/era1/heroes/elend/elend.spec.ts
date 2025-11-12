@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NalthisLink } from './nalthis-link';
+import { Elend } from './elend';
 
-describe('NalthisLink', () => {
-  let component: NalthisLink;
-  let fixture: ComponentFixture<NalthisLink>;
+describe('Elend', () => {
+  let component: Elend;
+  let fixture: ComponentFixture<Elend>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NalthisLink]
+      imports: [Elend]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NalthisLink);
+    fixture = TestBed.createComponent(Elend);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

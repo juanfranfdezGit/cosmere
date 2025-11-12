@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Vin } from './vin/vin';
 import { Kelsier } from './kelsier/kelsier';
+import { Elend } from './elend/elend';
 
 @Component({
   selector: 'app-heroes',
@@ -13,6 +14,7 @@ export class Heroes {
   heroes = [
     { name: 'Vin', component: Vin },
     { name: 'Kelsier', component: Kelsier },
+    { name: 'Elend', component: Elend },
   ];
 
   selectedHero = this.heroes[0];

@@ -1,0 +1,13 @@
+<section class="places">
+  <h2>Rincones en la Bruma</h2>
+
+  <div *ngFor="let place of places" class="places__item">
+    <img class="places__item__img" [src]="place.image" [alt]="place.name" />
+    <div class="places__item__info">
+      <h3><span>{{ place.name }}</span></h3>
+      <p>{{ place.description01 }}</p>
+      <p>{{ place.description02 }}</p>
+      <p>{{ place.description03 }}</p>
+    </div>
+  </div>
+</section>

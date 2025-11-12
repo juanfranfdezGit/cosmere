@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelLink } from './sel-link';
+import { Places } from './places';
 
-describe('SelLink', () => {
-  let component: SelLink;
-  let fixture: ComponentFixture<SelLink>;
+describe('Places', () => {
+  let component: Places;
+  let fixture: ComponentFixture<Places>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SelLink]
+      imports: [Places]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SelLink);
+    fixture = TestBed.createComponent(Places);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
