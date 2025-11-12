@@ -1,0 +1,11 @@
+<section class="heroesContainer flex">
+  <ul class="heroesContainer__list">
+    <li *ngFor="let hero of heroes" (click)="selectHero(hero)">
+      {{ hero.name }}
+    </li>
+  </ul>
+
+  <div class="heroesContainer__content">
+    <ng-container *ngComponentOutlet="selectedHero.component"></ng-container>
+  </div>
+</section>
