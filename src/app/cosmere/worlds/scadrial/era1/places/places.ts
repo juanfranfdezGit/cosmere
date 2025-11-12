@@ -38,7 +38,7 @@ export class Places {
         'La atmósfera de Urteau es a la vez portuaria e industrial, con un tinte de ciudad de paso, de cruce de caminos y de luchas internas. La ceniza y la bruma también la cubren, pero sus canales y su historia le otorgan una identidad propia. Puedes imaginar barcazas atracadas, muelles y edificaciones de madera junto al agua, la sombra de montañas de ceniza al fondo y señales de rebelión latente. En esencia, Urteau proyecta la dualidad de una ciudad cultivada por la nobleza y al mismo tiempo sacudida por la opresión skaa y los peligros de la revolución.',
     },
     {
-      name: 'Fuerte de Kredik',
+      name: 'Kredik Shaw',
       image: 'assets/images/cities/kredik.png',
       description01:
         'Kredik Shaw, conocido como “La colina de las mil agujas” en la lengua terris, es el vasto palacio-fortaleza del Lord Ruler situado en el corazón de Luthadel. Su estructura es poco convencional: torres de metal elevadas, aguja tras aguja, conectadas por alas y pasillos en una composición casi caótica, que al mismo tiempo demuestra poder, temor y dominio.',
@@ -46,6 +46,36 @@ export class Places {
         'Dentro de sus muros descansaba el enorme poder del Imperio: no solo como residencia real, sino como centro de producción, control y administración del régimen. La arquitectura misma era símbolo de la hegemonía del Lord Ruler, del monopolio del conocimiento y del uso del atium, y del control sobre la tierra y sus secretos.',
       description03:
         'La atmósfera que rodea a Kredik Shaw es cargada de misterio: ni la nobleza más poderosa se atrevía a ignorar su sombra, los skaa la miraban desde abajo con mezcla de temor y resentimiento, y los cielos de ceniza reforzaban la sensación de que nada escapaba al dominio del imperio. Para cualquier narración visual o descriptiva, Kredik Shaw es el epítome de la grandeza oscura, del poder latente y del mundo que se desmorona desde el vértice más alto.',
+    },
+    {
+      name: 'Convento de Seran',
+      image: 'assets/images/cities/seran.jpg',
+      description01:
+        'Esta fortaleza del Steel Ministry se encuentra en un valle remoto de la Dominación Oriental y carece de accesos fáciles por carretera, lo que la convierte en un lugar aislado y hermético.',
+      description02:
+        'Su arquitectura es fría, dominada por el acero y la piedra; en su interior se encuentran cámaras dedicadas a la tortura y experimentación hemalúrgica, con mesas de metal, picos y formas angulosas que transmiten opresión.',
+      description03:
+        'Tras la caída del Imperio Final, se descubre que la fortaleza está abandonada, con cuerpos en las salas y un gran plato de acero grabado en dialecto terris en una cámara subterránea. Esta ubicación puede usarse para evocar: secretos oscuros del régimen, la tecnología y el poder corrupto del Lord Legislador, y una atmósfera tétrica de abandono.',
+    },
+    {
+      name: 'Patria de los kandra',
+      image: 'assets/images/cities/kandrahomeland.jpg',
+      description01:
+        'Este lugar es un complejo de cuevas y túneles subterráneos, situado cerca de las grietas de Hathsin, donde los kandra residían cuando no cumplían Contratos.',
+      description02:
+        'Es un espacio secreto y apartado, con pasajes que incluso se conectaban con las minas de atium; su función era proteger un depósito oculto de atium que en realidad era parte del cuerpo de Ruina.',
+      description03:
+        'Este entorno puede usarse para evocar: lo oculto, la traición, los pactos antiguos, lo subterráneo. Ideal para una ambientación de misterio y tensión.',
+    },
+    {
+      name: 'Fadrex',
+      image: 'assets/images/cities/fadrex.png',
+      description01:
+        'Fadrex se alza en el Dominio Occidental del Imperio Final, sobre mesetas rocosas y acantilados naturales que la convierten en una fortaleza casi impenetrable. Aunque nunca tuvo murallas construidas como las de la capital, su emplazamiento —rodeado de formaciones rocosas alzadas como muros naturales— le otorgaba una defensa que pocas ciudades podían igualar.',
+      description02:
+        'Durante el reinado del Ashweather Cett se convirtió en centro de abastecimiento del Cantón de Recursos, almacenando víveres, agua y atium para el régimen. Ya bajo la dirección del obligator Aradan Yomen, la ciudad retomó la rígida estructura social del imperio, con nobles ostentando bailes y el Ministerio de Acero vigilando cada movimiento.',
+      description03:
+        'Visualmente, Fadrex presenta un contraste entre roca roja y naranja erosionada, escarpadas terrazas y una ruta de canal que permitía el transporte de bienes hacia el oeste. Los edificios no eran tan altos como los de la capital: predominantemente de uno o dos pisos, amplios, con espacio entre ellos, y solo unas pocas fortalezas de piedra al estilo de la capital con vidrieras ornamentadas.',
     },
   ];
 }

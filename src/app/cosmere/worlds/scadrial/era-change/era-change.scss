@@ -1,0 +1,40 @@
+.changerContainer {
+  position: absolute;
+  top: 18vh;
+  width: 100vw;
+  margin: 0 auto;
+  z-index: 4;
+  gap: 3rem;
+
+  &__item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -120%);
+      z-index: 2;
+      text-shadow: 0 0 8px #000;
+    }
+
+    span {
+        font-family: 'roman';
+        font-weight: 700;
+        color: white;
+    }
+
+    img {
+      width: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      filter: drop-shadow(0 0 4px #111);
+    }
+  }
+}
