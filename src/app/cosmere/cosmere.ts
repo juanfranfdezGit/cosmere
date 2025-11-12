@@ -9,8 +9,8 @@ import { filter } from 'rxjs';
   selector: 'app-cosmere',
   imports: [Break, Origin, Map],
   templateUrl: './cosmere.html',
-  styleUrl: './cosmere.scss',
 })
+
 export class Cosmere {
   constructor(private router: Router) {
     this.router.events

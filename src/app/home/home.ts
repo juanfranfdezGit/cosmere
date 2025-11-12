@@ -7,7 +7,6 @@ import { News } from './news/news';
   selector: 'app-home',
   imports: [Animation, Community, News],
   templateUrl: './home.html',
-  styleUrl: './home.scss',
 })
 
 export class Home {
