@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-harms-ladrian',
   imports: [],
   templateUrl: './harms-ladrian.html',
+  styleUrl: '../heroes2.scss',
 })
-export class HarmsLadrian {
-
-}
+export class HarmsLadrian {}

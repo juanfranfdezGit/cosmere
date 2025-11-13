@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-colms',
   imports: [],
   templateUrl: './colms.html',
+  styleUrl: '../heroes2.scss',
 })
-export class Colms {
-
-}
+export class Colms {}

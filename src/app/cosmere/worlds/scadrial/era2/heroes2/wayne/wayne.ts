@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-wayne',
   imports: [],
   templateUrl: './wayne.html',
+  styleUrl: '../heroes2.scss',
 })
 export class Wayne {
 

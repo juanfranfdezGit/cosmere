@@ -1,4 +1,4 @@
-.heroes2Container {
+.heroesContainer {
   background: url("/assets/images/paper.jpg");
   width: 100vw;
   height: 70vh;
@@ -15,7 +15,7 @@
   }
 
   &__list {
-    width: 22%;
+    width: 10%;
     list-style: none;
     align-self: flex-start;
     margin-top: -28vh;
@@ -46,7 +46,7 @@
   }
 }
 
-.heroesEra2 {
+.heroes {
   margin: 20vh auto;
   padding: 2rem 2rem 2rem 0rem;
   width: 60vw;
@@ -65,31 +65,28 @@
       width: 100%;
       filter: drop-shadow(0 0 4px #111);
 
-      &.ladrian {
-        width: auto;
-        height: 480px;
-        transform: translateY(40px);
-      }
-
-      &.wayne {
+      &.siri {
         width: auto;
         height: 420px;
+        transform: translateY(65px)translateX(-25px);
       }
 
-      &.marasi {
+      &.vivenna {
         width: auto;
-        height: 380px;
-        transform: translateX(-15px) translateY(90px);
+        height: 420px;
+        transform: translateY(65px)translateX(-15px);
       }
 
-      &.steris {
+      &.vasher {
         width: auto;
-        height: 450px;
-        transform: translateX(-15px) translateY(50px);
+        height: 620px;
+        transform: translateY(65px)translateX(-15px);
       }
 
-      &.meelan {
-        transform: translateY(50px);
+      &.susebron {
+        width: auto;
+        height: 650px;
+        transform: translateY(15px)translateX(-25px);
       }
     }
 
