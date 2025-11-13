@@ -1,0 +1,47 @@
+.heroes2Container {
+  background: url("/assets/images/paper.jpg");
+  width: 100vw;
+  height: 70vh;
+  padding: 30rem 15rem 25rem 15rem;
+  position: relative;
+  box-shadow: inset 0 0 45px #111, 0 0 8px #000;
+
+  &__title {
+    position: absolute;
+    top: 10vh;
+    color: #d4b60b;
+    text-shadow: 0 0 4px #111;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    width: 22%;
+    list-style: none;
+    align-self: flex-start;
+    margin-top: -28vh;
+
+    li {
+      cursor: pointer;
+      padding: 8px 1rem;
+      border-left: 4px solid transparent;
+      color: #111;
+      text-shadow: 0 0 4px #e0e0e094;
+      font-size: 2rem;
+      font-family: "old";
+      border-radius: 12px 0px 0px 12px;
+
+      &:hover {
+        background: #1111118f;
+      }
+
+      &.active {
+        border-left: 4px solid #d4b60b;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__content {
+    width: 70%;
+  }
+}

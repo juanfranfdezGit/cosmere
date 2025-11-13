@@ -1,5 +1,5 @@
 <main>
-    <app-era-change></app-era-change>
+  <app-era-change (eraSelected)="onEraSelected($event)"></app-era-change>
 
-    <app-era1></app-era1>
+  <ng-container *ngComponentOutlet="selectedEra"></ng-container>
 </main>

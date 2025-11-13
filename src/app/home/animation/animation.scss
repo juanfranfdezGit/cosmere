@@ -16,12 +16,12 @@
     &__mistborn {
       z-index: 2;
       position: absolute;
-      bottom: 5%;
-      left: 50vw;
-      width: 30%;
+      bottom: 2%;
+      left: 60vw;
+      width: 22%;
       opacity: 0.9;
-      filter: drop-shadow(0 0 8px #2f2f30c4) blur(0.2);
-      transform: translateY(-20px) translateX(12px);
+      filter: drop-shadow(0 0 8px #0c0c0cc4) blur(0.2);
+      transform: translateY(-10px) translateX(5px);
 
       &.active {
         animation: mistbornFloat 5s forwards;
@@ -264,7 +264,7 @@
   }
 
   100% {
-    transform: translateY(-20px) translateX(12px);
+    transform: translateY(-10px) translateX(5px);
   }
 }
 

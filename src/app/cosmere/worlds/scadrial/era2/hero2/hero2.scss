@@ -1,0 +1,31 @@
+.hero2 {
+  width: 100vw;
+  height: 90vh;
+  background: url(/assets/images/cities/scadrial03.png);
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+
+  &__info {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+
+    h1 {
+      font-size: 2.4rem;
+      text-shadow: 0 0 8px #111;
+      margin-bottom: -12px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-shadow: 0 0 8px #111;
+    }
+
+    span.numb {
+      font-family: "roman";
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
