@@ -5,13 +5,17 @@ import { Author } from './author/author';
 import { Home } from './home/home';
 import { Scadrial } from './cosmere/worlds/scadrial/scadrial';
 import { Nalthis } from './cosmere/worlds/nalthis/nalthis';
+import { Roshar } from './cosmere/worlds/roshar/roshar';
+import { Sel } from './cosmere/worlds/sel/sel';
 
 export const routes: Routes = [
   { path: '', component: Home},
   { path: 'cosmere', component: Cosmere },
   { path: 'author', component: Author },
   { path: 'cosmere/scadrial', component: Scadrial},
-  { path: 'cosmere/nalthis', component: Nalthis}
+  { path: 'cosmere/nalthis', component: Nalthis},
+  { path: 'cosmere/roshar', component: Roshar},
+  { path: 'cosmere/sel', component: Sel}
 ];
 
 @NgModule({
