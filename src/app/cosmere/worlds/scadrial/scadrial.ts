@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Era1 } from './era1/era1';
-import { Era2 } from './era2/era2';
 import { EraChange } from './era-change/era-change';
 import { CommonModule } from '@angular/common';
+import { Maplink } from '../../maplink/maplink';
 
 @Component({
   selector: 'app-scadrial',
-  imports: [EraChange, CommonModule, Era1, Era2],
+  imports: [EraChange, CommonModule, Maplink ],
   templateUrl: './scadrial.html',
   styleUrl: './scadrial.scss',
 })

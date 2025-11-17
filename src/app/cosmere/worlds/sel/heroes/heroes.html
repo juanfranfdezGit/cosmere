@@ -1,0 +1,13 @@
+<section class="heroesContainer flex">
+  <h2 class="heroesContainer__title">Heraldos de Nalthis</h2>
+
+  <ul class="heroesContainer__list">
+    <li *ngFor="let hero of heroes" (click)="selectHero(hero)">
+      {{ hero.name }}
+    </li>
+  </ul>
+
+  <div class="heroesContainer__content">
+    <ng-container *ngComponentOutlet="selectedHero.component"></ng-container>
+  </div>
+</section>

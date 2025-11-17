@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { Siri } from './siri/siri';
-import { Vivenna } from './vivenna/vivenna';
-import { Vasher } from './vasher/vasher';
-import { Susebron } from './susebron/susebron';
 import { CommonModule } from '@angular/common';
+import { Raoden } from './raoden/raoden';
+import { Sarene } from './sarene/sarene';
+import { Hrathen } from './hrathen/hrathen';
 
 @Component({
   selector: 'app-heroes',
@@ -13,10 +12,9 @@ import { CommonModule } from '@angular/common';
 })
 export class Heroes {
   heroes = [
-    { name: 'Siri', component: Siri },
-    { name: 'Vivenna', component: Vivenna },
-    { name: 'Vasher', component: Vasher },
-    { name: 'Susebron', component: Susebron },
+    { name: 'Raoden', component: Raoden },
+    { name: 'Sarene', component: Sarene },
+    { name: 'Hrathen', component: Hrathen },
   ];
 
   selectedHero = this.heroes[0];
