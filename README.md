@@ -1,6 +1,6 @@
 # Los Archivos de Hoid
 
-Un blog temático sobre el universo del **Cosmere**, desarrollado en **Angular**. Este proyecto incluye páginas para libros, autores, personajes y teorías, además de funcionalidades dinámicas como enrutamiento, servicios, consumo de APIs y componentes reutilizables.
+Blog temático sobre el universo del **Cosmere**, desarrollado en **Angular**. Este proyecto incluye páginas para libros, autores, personajes y teorías, además de funcionalidades dinámicas como enrutamiento, servicios, consumo de APIs y componentes reutilizables.
 
 ## 🚀 Tecnologías utilizadas
 - Angular 17+
