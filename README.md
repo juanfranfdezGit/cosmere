@@ -1,54 +1,83 @@
-# Los Archivos de Hoid
+# 📚 Hoid’s Archives
 
-Blog temático sobre el universo del **Cosmere**, desarrollado en **Angular**. Este proyecto incluye páginas para libros, autores, personajes y teorías, además de funcionalidades dinámicas como enrutamiento, servicios, consumo de APIs y componentes reutilizables.
+A thematic blog about Brandon Sanderson’s Cosmere universe built with Angular.
+This project showcases a modular frontend architecture using Angular best practices, reusable components, and API-driven content.
 
-## 🚀 Tecnologías utilizadas
-- Angular 17+
-- TypeScript
-- RxJS
-- SCSS
-- Node.js + npm
-- Angular CLI
+The application includes dedicated sections for books, authors, characters, and fan theories, demonstrating routing, services, and reactive programming.
+
+## ✨ Features
+- Angular modular architecture
+- Component-based UI design
+- Client-side routing with Angular Router
+- API consumption using services
+- Reactive programming with RxJS
+- Reusable UI components
+- SCSS styling structure
+- TypeScript-based development
+
+## 🛠 Tech Stack
+| Technology    | Purpose                      |
+| ------------- | ---------------------------- |
+| Angular 17+   | Frontend framework           |
+| TypeScript    | Application logic            |
+| RxJS          | Reactive data handling       |
+| SCSS          | Styling                      |
+| Node.js + npm | Environment and dependencies |
+| Angular CLI   | Project tooling              |
+
 
 ---
 
-## 📦 Instalación y configuración
+## 📦 Installation and Setup
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 ```bash
 git clone https://github.com/tu-usuario/cosmere-blog-angular.git
 cd cosmere-blog-angular
 ```
 
-### 2. Instalar dependencias
-* Asegúrate de tener Node.js 18+.
+### 2. Install dependencies
+* Make sure you have Node.js 18+ installed.
 ```bash
 npm install
 ```
 
-### 3. Ejecutar el servidor de desarrollo
+### 3. Run the development server
 
 ```bash
 ng serve
 ```
 
-Luego abre el navegador en:
+Then open your browser at:
 👉 http://localhost:4200
 
+## 📂 Project Structure
+Example high-level structure:
 
-## 🤝 Contribución
+```bash
+src/
+├── app/
+│ ├── components/
+│ ├── pages/
+│ ├── services/
+│ ├── models/
+│ └── app-routing.module.ts
+├── assets/
+└── styles/
+```
 
-- Haz un fork del repositorio
-- Crea una rama nueva:
+## 🤝 Contributing
+
+- Fork the repository
+- Create a new branch:
 ```bash
 git checkout -b feature/nueva-funcionalidad
 ```
-- Realiza tus cambios y haz commit
-- Envía un Pull Request
+- Make your changes and commit them
+- Submit a Pull Request
 
-## 🤝 Contribución
-
-Este proyecto está bajo la licencia MIT. Puedes usarlo libremente.
+## 📄 License
+This project is licensed under the MIT License. You are free to use it.
 
 
 
