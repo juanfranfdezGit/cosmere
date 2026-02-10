@@ -51,23 +51,6 @@ ng serve
 Then open your browser at:
 👉 http://localhost:4200
 
-## 📂 Project Structure
-Example high-level structure:
-
-```bash
-src/
-├── app/
-│ ├── author/
-│ ├── common/
-│ ├── cosmere/
-│ ├── home/
-│ ├── app.config.ts
-│ ├── app.html
-│ ├── app.routes.ts
-│ ├── app.scss
-│ └── app.ts
-```
-
 ## 🤝 Contributing
 
 - Fork the repository
