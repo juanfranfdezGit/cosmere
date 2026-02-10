@@ -57,13 +57,15 @@ Example high-level structure:
 ```bash
 src/
 ├── app/
-│ ├── components/
-│ ├── pages/
-│ ├── services/
-│ ├── models/
-│ └── app-routing.module.ts
-├── assets/
-└── styles/
+│ ├── author/
+│ ├── common/
+│ ├── cosmere/
+│ ├── home/
+│ ├── app.config.ts
+│ ├── app.html
+│ ├── app.routes.ts
+│ ├── app.scss
+│ └── app.ts
 ```
 
 ## 🤝 Contributing
